@@ -31,9 +31,7 @@ publicar = () => {
         if (photoFile != undefined) {
 
             const photoFileName = photoFile.name
-            const task = firebase.storage().ref('images')
-                .child(photoFileName)
-                .put(photoFile);
+            const task = firebase.storage().ref('images').child(photoFileName).put(photoFile);
             task.then(snapshot => snapshot.ref.getDownloadURL())
                 .then(url => {
                     urlPhoto = url

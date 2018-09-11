@@ -10,13 +10,14 @@
  firebase.initializeApp(config);
 
  window.onload = () => {
-         firebase.auth().onAuthStateChanged(user => {
-             if (user) {
-                 currentUser = firebase.auth().currentUser
-             }
-         });
-     }
-     // Registro
+     firebase.auth().onAuthStateChanged(user => {
+         if (user) {
+             currentUser = firebase.auth().currentUser
+         }
+     });
+ }
+
+ // Registro
  function registerWithFirebase() {
 
      const emailValue = txtEmail.value
