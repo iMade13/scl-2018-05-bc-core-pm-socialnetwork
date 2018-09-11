@@ -1,15 +1,32 @@
+
 describe('auth', () => {
-    it('debería ser una funcion', () => {
+    
+    it('logoutWithFireBase debería ser una funcion', () => {
         assert.isFunction(logoutWithFireBase);
     });
 
-    it('debería exponer función sortUsers en objeto global', () => {
+    it('facebookLoginwithFireBase debería ser una funcion', () => {
         assert.isFunction(facebookLoginwithFireBase);
+    });
+
+    it('loginWithFirebase debería ser una funcion', () => {
+        assert.isFunction(loginWithFirebase);
+    });
+    it('googleLoginwithFireBase debería ser una funcion', () => {
+        assert.isFunction(googleLoginwithFireBase);
     });
 });
 
 describe('publicar', () => {
-    it('debería existir datos que no sean NULL or UNDEFINED', () => {
-        assert.exists(publicar, 'publicar is neither `null` nor `undefined`');
+    it('mostrarPublicaciones debería ser una funcion', () => {
+        assert.isFunction(mostrarPublicaciones);
+    });
+
+    it('editPost', () => {
+        assert.isFunction(editPost);
+    });
+
+    it('deletePost', () => {
+        assert.isFunction(deletePost);
     });
 })

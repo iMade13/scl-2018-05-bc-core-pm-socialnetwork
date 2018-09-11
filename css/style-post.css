@@ -65,7 +65,8 @@ main {
 
 main .barra-lateral-izquierda {
     padding-bottom: 10px;
-    padding-left: 4px;
+    padding-left: 10px;
+    padding-top: 10px;
     background: rgba(130, 180, 63, .09)
 }
 

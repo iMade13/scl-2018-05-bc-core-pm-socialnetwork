@@ -7,9 +7,11 @@
     <title>Lista de Usuarios y Amigos</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
     <link rel="shortcut icon" href="/img/logo-manzana.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-post.css">
 </head>
@@ -20,11 +22,15 @@
             <div class="row" id="profile">
                 <!--Aquí colocamos el logotipo-->
                 <div class="col-4 logo">
-                    <a href="#"><img src="img/logo.png" alt=""></a>
+                    <a href="#">
+                        <img src="img/logo.png" alt="">
+                    </a>
                 </div>
                 <!--Información de Perfil-->
-                <div class="col col-md-6">
-                    <a href="#"><span class="displayName"></span></a>
+                <div class="col col-md-8">
+                    <a href="#">
+                        <span class="displayName"></span>
+                    </a>
                     <!--Cargar imagen del usuario-->
                     <a href="#" class="imagen"></a>
                 </div>
@@ -36,19 +42,38 @@
             <!--BARRA LATERAL-->
             <div class="col-md-3 barra-lateral-izquierda" id="barra-lateral-izquierda">
                 <nav>
-                    <a href="profile.html" class="enlaces"><i class="fas fa-user"></i>Perfil</a>
-                    <a href="post.html" class="enlaces"><i class="fas fa-edit"></i>Post</a>
-                    <a href="mensajes.html" class="enlaces"><i class="fas fa-envelope"></i>Mensajes</a>
-                    <a href="#" onclick="logoutWithFireBase()" class="enlaces"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                    <a href="profile.html" class="enlaces">
+                        <i class="fas fa-user"></i>Perfil</a>
+                    <a href="post.html" class="enlaces">
+                        <i class="fas fa-edit"></i>Post</a>
+                    <a href="mensajes.html" class="enlaces">
+                        <i class="fas fa-envelope"></i>Mensajes</a>
+                    <a href="#" onclick="logoutWithFireBase()" class="enlaces">
+                        <i class="fas fa-sign-out-alt"></i>Logout</a>
                 </nav>
                 <div class="imagenes-lateral col d-block">
                     <h3 id="title-imagenes">Publicidad</h3>
                     <div class="images">
-                        <a href="#"><img src="/img/image-1.jpg" width="150" alt=""></a>
-                        <a href="#"><img src="/img/image-2.jpg" width="150" alt=""></a>
-                        <a href="#"><img src="/img/image-3.jpg" width="150" alt=""></a>
-                        <a href="#"><img src="/img/image-4.jpg" width="150" alt=""></a>
-                        <a href="#"><img src="/img/image-5.jpg" width="150" alt=""></a>
+                        <a href="#">
+                            <img src="https://estephanyc.github.io/scl-2018-05-bc-core-pm-socialnetwork/img/image-1.jpg"
+                                width="150" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://estephanyc.github.io/scl-2018-05-bc-core-pm-socialnetwork/img/image-2.jpg"
+                                width="150" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://estephanyc.github.io/scl-2018-05-bc-core-pm-socialnetwork/img/image-3.jpg"
+                                width="150" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://estephanyc.github.io/scl-2018-05-bc-core-pm-socialnetwork/img/image-4.jpg"
+                                width="150" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://estephanyc.github.io/scl-2018-05-bc-core-pm-socialnetwork/img/image-5.jpg"
+                                width="150" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -67,8 +92,10 @@
 
                 <!--BOTONES-->
                 <div class="row btn-user">
-                    <button class="btn btn-users" onclick="showUsers()"><i class="fas fa-users"></i> Usuarios</button>
-                    <button class="btn btn-users" onclick="showFriends()"><i class="fas fa-user"></i> Amigos</button>
+                    <button class="btn btn-users" onclick="showUsers()">
+                        <i class="fas fa-users"></i> Usuarios</button>
+                    <button class="btn btn-users" onclick="showFriends()">
+                        <i class="fas fa-user"></i> Amigos</button>
                 </div>
 
                 <!--LISTA DE AMIGOS-->
@@ -77,8 +104,10 @@
         </div>
     </main>
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
     <script src="js/auth.js"></script>
     <script src="js/friends.js"></script>
     <script src="js/menu.js"></script>

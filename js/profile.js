@@ -40,7 +40,12 @@ showProfile = (userKey) => {
             .catch((error) => {
                 console.log("Database error > " + JSON.stringify(error));
             });
+    if (userKey != currentUser.uid) {
+        enabledRol.style.display = 'none';
+        enabledCountry.style.display = 'none';
     }
+    }
+
     // cada vez que se cambia el rol se actualiza en la base de datos
 rol.addEventListener("change", function() {
     firebase.database().ref(`users/${currentUser.uid}`).update({ rol: rol.value });
